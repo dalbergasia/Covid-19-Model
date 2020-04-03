@@ -10,7 +10,7 @@ The Dalberg model is unique due to two main reasons:
 1. We have used a modified version of the standard SEIRS model to build our projection engine. These modifications allow the model to reflect **unique features of CoVID-19 disease** , such as being infectious without exhibiting any symptoms, and different disease reproduction rates for people with and without symptoms
 2. By applying a machine-learning on top of the simulation engine, the model is capable of identifying &#39;dynamic&#39; parameters of the disease in near real-time and adjust the projections accordingly. This **helps create a &#39;sandbox mode&#39; for policy interventions** and observe their impact within few days of implementing an intervention
 
-There are four steps involved in developing this model:
+There are five steps involved in developing this model:
 
 - **Step I** : Selecting the epidemiological model
 - **Step II** : Developing differential equations governing shift of population through the disease cycle
