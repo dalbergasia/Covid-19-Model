@@ -12,11 +12,11 @@ The Dalberg model is unique due to two main reasons:
 
 There are four steps involved in developing this model:
 
-- -- **Step I** : Selecting the epidemiological model
-- -- **Step II** : Developing differential equations governing shift of population through the disease cycle
-- -- **Step III** : Understanding the nature of disease features
-- -- **Step IV** : Building the simulation engine
-- -- **Step V** : Building the Machine Learning layer for real time prediction
+- **Step I** : Selecting the epidemiological model
+- **Step II** : Developing differential equations governing shift of population through the disease cycle
+- **Step III** : Understanding the nature of disease features
+- **Step IV** : Building the simulation engine
+- **Step V** : Building the Machine Learning layer for real time prediction
 
 **Step I: Selecting the epidemiological model**
 
