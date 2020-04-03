@@ -83,7 +83,7 @@ Dynamic nature of these features along with model&#39;s high sensitivity towards
 ### **Step IV: Building the simulation engine**
 ---
 
-Using the model equations from Step II and values of _static features_ from step III, we built a deterministic model in Python (WIP) and excel (Completed).  Figure 2 shows time variance of susceptible (S), Exposed (E), Infectious with mild symptoms (I), Infectious with severe symptoms (C), Recovered (R), and Dead (D) over the next 2-years for India, using three set of values for dynamic features. As indicated earlier, the projections of peak hospital requirement and total number of fatalities vary significantly across the three set
+Using the model equations from Step II and values of _static features_ from step III, we built a deterministic model in Python (WIP) and excel (Completed).  Figure 2 shows time variance of susceptible (S), Exposed (E), Infectious with mild symptoms (I), Infectious with severe symptoms (C), Recovered (R), and Dead (D) over the next 2-years for India, using three set of values for dynamic features. As indicated earlier, the projections of peak hospital requirement and total number of fatalities vary significantly across the three sets.
 
 _Figure 2: Simulation model to be updated_
 
