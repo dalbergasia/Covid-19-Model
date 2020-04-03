@@ -51,46 +51,6 @@ And the parameters (described in terms of disease or demographic features) are,
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_1.jpg" width="700">
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_2.jpg" width="700">
 
-- **P**** 0 **** =** Births per day as a percentage of total population
-
-     = Annual birth rate per thousand x (1000/365)
-
-- **P**** 1 **** =** Non infection related deaths per day as a percentage of total population
-
-**     =** Annual death rate per thousand x (1000/365)
-
-- **P**** 2 **** =** Number of virus exposures caused per day by each infectious, non-symptomatic individual
-
-**     =**
-
-- **P**** 3 ****=** Number of virus exposures caused per day by each individual with severe symptoms
-
-**     =**
-
-- **P**** 4 **** =** Percentage of exposed who become infectious per day, with mild or no symptoms
-
-**     =**
-
-- **P**** 5 ****:** Percentage of exposed who become infectious per day, with severe symptoms
-
-**     **** =**
-
-- **P**** 6 ****:** Percentage of infectious people with no or mild symptoms, who recover every day
-
-**     =**
-
-- **P**** 7**: Percentage of infectious people with severe symptoms, who recover every day
-
-**     =**
-
-- **P**** 8 ****:** Percentage of infectious people with severe symptoms, who die every day
-
-**     =**
-
-- **P**** 9 ****:** Percentage of recovered individuals who may re-contract the virus per day
-
-**     =**
-
 **Step III: Understanding the nature of disease features:**
 
 Based on above description, the model requires 9 disease features as inputs. These features can be classified into two categories: six **static features** and three **dynamic features**.
