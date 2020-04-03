@@ -117,12 +117,12 @@ represents number of days before today for the data point;  is square error for 
 - Develop deployable versions that can be picked by local and state governments to test interventions
 
 
------------
-<a name="1">1</a>: Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
+---
+###### <a name="1">1</a>: Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
 
-<a name="2">1</a>: Note on sensitivity of disease prediction against reproduction rates
+###### <a name="2">2</a>: Note on sensitivity of disease prediction against reproduction rates
 
-<a name="3">1</a>: As on 2nd April 2020
+###### <a name="3">3</a>: As on 2nd April 2020
 
 
 
