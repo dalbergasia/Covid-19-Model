@@ -48,8 +48,8 @@ Where, at any given time,
 
 And the parameters (described in terms of disease or demographic features) are,
 
-<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_1.jpg" width="500">
-<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_2.jpg" width="500">
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_1.jpg" width="700">
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_2.jpg" width="700">
 
 - **P**** 0 **** =** Births per day as a percentage of total population
 
