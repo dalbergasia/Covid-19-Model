@@ -26,7 +26,8 @@ We picked a generalised SEIRS epidemiological model with vital dynamics, and mad
 - We have split &#39;Removed&#39; into &#39;Recovered&#39; and &#39;Dead&#39; as these statistics are important for understanding the extent of casualty and for reliably using the ML algorithm, as we will explore.
 
 
-![Figure 1: Schematic representing shift of population through SEIRS model of disease cycle, and subsequent CoVID-19 modifications](https://github.com/dalbergasia/Covid-19-Model/blob/master/images/Covid19%20Schematic.jpg)
+![Covid19 Schematic](https://github.com/dalbergasia/Covid-19-Model/blob/master/images/Covid19%20Schematic.jpg)
+*Figure 1: Schematic representing shift of population through SEIRS model of disease cycle, and subsequent CoVID-19 modifications*
 
 Please note that for any short-term projection, the vital dynamics components (i.e. birth and death rates) and disease recurrence rate, if any for CoVID-19, will have no reasonable impact. Additionally, the model assumes a closed system with no movement of people in and out of the system, except due to birth/death.
 
