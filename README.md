@@ -26,7 +26,7 @@ We picked a generalised SEIRS epidemiological model with vital dynamics, and mad
 - We have split &#39;Removed&#39; into &#39;Recovered&#39; and &#39;Dead&#39; as these statistics are important for understanding the extent of casualty and for reliably using the ML algorithm, as we will explore.
 
 ###### *Figure 1: Schematic representing shift of population through SEIRS model of disease cycle, and subsequent CoVID-19 modifications*
-![Covid19 Schematic](https://github.com/dalbergasia/Covid-19-Model/blob/master/images/Covid19%20Schematic.jpg)
+![Covid19 Schematic](https://github.com/dalbergasia/Covid-19-Model/blob/master/images/schematic.jpg)
 
 Please note that for any short-term projection, the vital dynamics components (i.e. birth and death rates) and disease recurrence rate, if any for CoVID-19, will have no reasonable impact. Additionally, the model assumes a closed system with no movement of people in and out of the system, except due to birth/death.
 
@@ -34,13 +34,7 @@ Please note that for any short-term projection, the vital dynamics components (i
 
 Aligned with the above schematic, we have following differential equations
 
-- _N = S + E + I + C + R_
-- _P __0__ \*N + P __9__ \*R - P __1__ \*S - P __2__ \*S\*(I/N) - P __3__ \*S\*(C/N)_
-- _P __2__ \*S\*(I/N) + P __3__ \*S\*(C/N) - P __4__ \*E  - P __5__ \*E - P __1__ \*E_
-- _P __4__ \*E - P __1__ \*I - P __6__ \*I_
-- _P __5__ \*E - P __1__ \*C - P __7__ \*C - P __8__ \*C_
-- _P __7__ \*C + P __6__ \*I - P __1__ \*R - P __9__ \*R_
-- _P __8__ \*C_
+![Differential Equations](https://github.com/dalbergasia/Covid-19-Model/blob/master/images/differential%20equations.jpg)
 
 Where, at any given time,
 
