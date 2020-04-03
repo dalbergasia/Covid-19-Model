@@ -63,7 +63,7 @@ Based on above description, the model requires 9 disease features as inputs. The
 
      | **Static disease features** | **Value** |
      | --- | :-: |
-     | *Percentage of exposed who become infectious with severe symptoms* | 19% |
+     | *Percentage of exposed who become infectious with severe symptoms<sup id="a2">[#](#f1)</sup>* | 5.5% (Singapore), 3.0% (India) |
      | *Percentage of recovered population who may re-contract the virus* | 0% (unused) |
      | *Days an exposed person takes to become infectious* | 5 |
      | *Days for which a person with mild or no symptoms remains infectious before recovery* | 20 |
@@ -80,6 +80,22 @@ Based on above description, the model requires 9 disease features as inputs. The
   - **_Percentage of infectious people with severe symptoms who recover:_** This will depend on a community&#39;s comorbidity factors (e.g. high diabetes prevalence) and access to healthcare
 
 Dynamic nature of these features along with model&#39;s high sensitivity towards them<sup id="a2">[2](#f1)</sup> implies that values estimated in one location may not be used in another, and only measurements made in local and current context can provide reliable forecasts.
+
+- <sup id="a2">[#](#f1)</sup>Note that the percentage of exposed who become infectious with severe symptoms is changing with geography due to differences in demographic composition. However, we have still considered it to be a static variable, as it’s unchanging for a given demography. The calculation for Singapore is illustrated below, and a similar calculation was performed for India
+
+     | **Age Group** | **Percentage of population** | **Percentage of infected patients with severe symptoms<sup id="a2">[3](#f1)</sup>** |
+     | ---- | :---: | :---:|
+     | 0-9 | 9.5% | 0.00% |
+     | 10-19 | 10.7% | 0.04% |
+     | 20-29 | 13.4% | 1.04% | 
+     | 30-39 | 14.8% | 3.43% |
+     | 40-49 | 15.2% | 4.25% |
+     | 50-59 | 15.1% | 8.16% |
+     | 60-69 | 12.4% | 11.8% |
+     | 70-79 | 6.0% | 16.6% |
+     | 80+ | 2.9% | 18.4% |
+     | ***Weighted percentage of exposed who developed severe symptoms***| | 5.5% |
+     
 
 ### **Step IV: Building the simulation engine**
 ---
@@ -109,7 +125,7 @@ Note that other real-world data feeds, such as number of hospitalised CoVID-19 c
 
 ### _A note on the overall Error term_
 
-**Including multiple data feeds:** While, reported number of CoVID-19 deaths can be one of the most reliable data feeds, in a country such as Singapore with only 4 deaths<sup id="a3">[3](#f1)</sup>, it may also lack any statistical power. On the other hand, large number of daily identified cases can provide the required statistical power but may also be under-reported. To solve for this, we estimate overall error terms by assigning pre-specified weights to the normalised version of respective errors in the two data feeds. These weights reflect our preference (and trust) for the data feed to be used in fitting the curve. Overall Error term is given by:
+**Including multiple data feeds:** While, reported number of CoVID-19 deaths can be one of the most reliable data feeds, in a country such as Singapore with only 4 deaths<sup id="a3">[4](#f1)</sup>, it may also lack any statistical power. On the other hand, large number of daily identified cases can provide the required statistical power but may also be under-reported. To solve for this, we estimate overall error terms by assigning pre-specified weights to the normalised version of respective errors in the two data feeds. These weights reflect our preference (and trust) for the data feed to be used in fitting the curve. Overall Error term is given by:
 
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/error%20function.jpg" width="900">
 
@@ -135,4 +151,6 @@ Where, _i_ represents number of days in the past on which the data point was cap
 
 ###### <b id="f1">2.</b> Note on sensitivity of disease prediction against reproduction rates [↩](#a2)
 
-###### <b id="f1">3.</b> As on 2nd April 2020 [↩](#a3)
+###### <b id="f1">3.</b> The Lancet: Estimates of the severity of coronavirus disease 2019: a model-based analysis [↩](#a3)
+
+###### <b id="f1">4.</b> As on 2nd April 2020 [↩](#a3)
