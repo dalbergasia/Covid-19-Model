@@ -78,7 +78,7 @@ Based on above description, the model requires 9 disease features as inputs. The
 
   - **_Percentage of infectious people with severe symptoms who recover:_** This will depend on a community&#39;s comorbidity factors (e.g. high diabetes prevalence) and access to healthcare
 
-Dynamic nature of these features along with model&#39;s high sensitivity towards them2 implies that values estimated in one location may not be used in another, and only measurements made in local and current context can provide reliable forecasts.
+Dynamic nature of these features along with model&#39;s high sensitivity towards them<sup id="a2">[2](#f1)</sup> implies that values estimated in one location may not be used in another, and only measurements made in local and current context can provide reliable forecasts.
 
 ### **Step IV: Building the simulation engine**
 ---
@@ -101,7 +101,7 @@ For this curve-fitting exercise, we select two most commonly available daily dat
 
 ### _A note on the overall Error term_
 
-**Including multiple data feeds:** While, reported number of CoVID-19 deaths can be one of the most reliable data feeds, in a country such as Singapore with only 4 deaths3, it may also lack any statistical power. On the other hand, large number of daily identified cases can provide the required statistical power but may also be under-reported. To solve for this, we estimate overall error terms by assigning pre-specified weights to the normalised version of respective errors in the two data feeds. These weights reflect our preference (and trust) for the data feed to be used in fitting the curve. Overall Error term is given by:
+**Including multiple data feeds:** While, reported number of CoVID-19 deaths can be one of the most reliable data feeds, in a country such as Singapore with only 4 deaths<sup id="a3">[3](#f1)</sup>, it may also lack any statistical power. On the other hand, large number of daily identified cases can provide the required statistical power but may also be under-reported. To solve for this, we estimate overall error terms by assigning pre-specified weights to the normalised version of respective errors in the two data feeds. These weights reflect our preference (and trust) for the data feed to be used in fitting the curve. Overall Error term is given by:
 
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/error%20function.jpg" width="900">
 
@@ -125,11 +125,8 @@ _i_ represents number of days in the past on which the data point was captured; 
 
 
 ---
-<a name="1">1</a>: Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
 <b id="f1">1</b> Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support [↩](#a1)
-<a name="2">2</a>: Note on sensitivity of disease prediction against reproduction rates
 
-<a name="3">3</a>: As on 2nd April 2020
+<b id="f1">2</b> Note on sensitivity of disease prediction against reproduction rates [↩](#a2)
 
-
-
+<b id="f1">3</b> As on 2nd April 2020 [↩](#a3)
