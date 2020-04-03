@@ -127,8 +127,8 @@ _i_ represents number of days in the past on which the data point was captured; 
 
 
 ---
-<b id="f1">1</b> Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support [↩](#a1)
+###### <b id="f1">1.</b> Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support [↩](#a1)
 
-<b id="f1">2</b> Note on sensitivity of disease prediction against reproduction rates [↩](#a2)
+###### <b id="f1">2.</b> Note on sensitivity of disease prediction against reproduction rates [↩](#a2)
 
-<b id="f1">3</b> As on 2nd April 2020 [↩](#a3)
+###### <b id="f1">3.</b> As on 2nd April 2020 [↩](#a3)
