@@ -1,4 +1,0 @@
-class learner:
-
-	# TBU
-	pass	
