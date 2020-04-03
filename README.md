@@ -1,7 +1,7 @@
-# Covid-19-Model
+# Covid-19 Model
 This repository contains project files for CoVID-19 Model built by Dalberg
 
-## Technical paper on Dalberg&#39;s CoVID-19 Model
+## Technical paper on Dalberg&#39;s CoVID-19 Modelling
 
 Various experts, statisticians, and businesses are working on a wide range of epidemiological models to gain deeper understanding of CoVID-19. Tools derived from such models can predict broader impact of the disease in a geography, identify right policy interventions and enable better allocation of resources.
 
