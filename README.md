@@ -19,8 +19,8 @@ There are four steps involved in developing this model:
 - **Step V** : Building the Machine Learning layer for real time prediction
 
 
-**Step I: Selecting the epidemiological model**
----
+### **Step I: Selecting the epidemiological model**
+
 We picked a generalised SEIRS epidemiological model with vital dynamics, and made two specific modifications to it (Figure 1).
 
 - We consider two categories of people who can be infectious – those who do not display any symptoms or display only minor symptoms, and those who display severe symptoms1. The lack of obvious symptoms in infectious individuals is an important characteristic of the CoVID-19, also making it a very insidious disease and hence important to model
@@ -31,7 +31,7 @@ We picked a generalised SEIRS epidemiological model with vital dynamics, and mad
 
 Please note that for any short-term projection, the vital dynamics components (i.e. birth and death rates) and disease recurrence rate, if any for CoVID-19, will have no reasonable impact. Additionally, the model assumes a closed system with no movement of people in and out of the system, except due to birth/death.
 
-**Step II: Developing differential equations governing shift of population through the disease cycle**
+### **Step II: Developing differential equations governing shift of population through the disease cycle**
 
 Aligned with the above schematic, we have following differential equations
 
