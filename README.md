@@ -20,6 +20,7 @@ There are four steps involved in developing this model:
 
 
 ### **Step I: Selecting the epidemiological model**
+---
 
 We picked a generalised SEIRS epidemiological model with vital dynamics, and made two specific modifications to it (Figure 1).
 
@@ -32,6 +33,7 @@ We picked a generalised SEIRS epidemiological model with vital dynamics, and mad
 Please note that for any short-term projection, the vital dynamics components (i.e. birth and death rates) and disease recurrence rate, if any for CoVID-19, will have no reasonable impact. Additionally, the model assumes a closed system with no movement of people in and out of the system, except due to birth/death.
 
 ### **Step II: Developing differential equations governing shift of population through the disease cycle**
+---
 
 Aligned with the above schematic, we have following differential equations
 
@@ -53,6 +55,7 @@ And the parameters (described in terms of disease or demographic features) are,
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_2.jpg" width="700">
 
 ### **Step III: Understanding the nature of disease features:**
+---
 
 Based on above description, the model requires 9 disease features as inputs. These features can be classified into two categories: six **static features** and three **dynamic features**.
 
@@ -78,12 +81,14 @@ Based on above description, the model requires 9 disease features as inputs. The
 Dynamic nature of these features along with model&#39;s high sensitivity towards them2 implies that values estimated in one location may not be used in another, and only measurements made in local and current context can provide reliable forecasts.
 
 ### **Step IV: Building the simulation engine**
+---
 
 Using the model equations from Step II and values of _static features_ from step III, we built a deterministic model in Python (WIP) and excel (Completed).  Figure 2 shows time variance of susceptible (S), Exposed (E), Infectious with mild symptoms (I), Infectious with severe symptoms (C), Recovered (R), and Dead (D) over the next 2-years for India, using three set of values for dynamic features. As indicated earlier, the projections of peak hospital requirement and total number of fatalities vary significantly across the three set
 
 _Figure 2: Simulation model to be updated_
 
 ### **Step V: Building the Machine Learning layer for real time prediction**
+---
 
 Once we have the underlying simulation engine, in the next step we built a machine learning layer to figure out what set of values for the dynamic parameters best explains the real-world data. In other words, we try to find values of the dynamic features which best fits the projection curve on the real-world data.
 
@@ -118,9 +123,11 @@ represents number of days before today for the data point;  is square error for 
 
 
 ---
-###### <a name="1">1</a>: Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
-###### <a name="2">2</a>: Note on sensitivity of disease prediction against reproduction rates
-###### <a name="3">3</a>: As on 2nd April 2020
+<a name="1">1</a>: Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
+
+<a name="2">2</a>: Note on sensitivity of disease prediction against reproduction rates
+
+<a name="3">3</a>: As on 2nd April 2020
 
 
 
