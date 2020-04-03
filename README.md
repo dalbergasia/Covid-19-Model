@@ -22,8 +22,7 @@ There are four steps involved in developing this model:
 
 We picked a generalised SEIRS epidemiological model with vital dynamics, and made two specific modifications to it (Figure 1).
 
--
-We consider two categories of people who can be infectious – those who do not display any symptoms or display only minor symptoms, and those who display severe symptoms1. The lack of obvious symptoms in infectious individuals is an important characteristic of the CoVID-19, also making it a very insidious disease and hence important to model
+- We consider two categories of people who can be infectious – those who do not display any symptoms or display only minor symptoms, and those who display severe symptoms1. The lack of obvious symptoms in infectious individuals is an important characteristic of the CoVID-19, also making it a very insidious disease and hence important to model
 - We have split &#39;Removed&#39; into &#39;Recovered&#39; and &#39;Dead&#39; as these statistics are important for understanding the extent of casualty and for reliably using the ML algorithm, as we will explore.
 
 Figure 1: Schematic representing shift of population through SEIRS model of disease cycle, and subsequent CoVID-19 modifications
