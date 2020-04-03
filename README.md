@@ -36,6 +36,8 @@ Aligned with the above schematic, we have following differential equations
 
 ![Differential Equations](https://github.com/dalbergasia/Covid-19-Model/blob/master/images/differential%20equations.jpg)
 
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/differential%20equations.jpg" height="100">
+
 Where, at any given time,
 
 - **N** is the total population
