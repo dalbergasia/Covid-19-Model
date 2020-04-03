@@ -107,9 +107,7 @@ Note that other real-world data feeds, such as number of hospitalised CoVID-19 c
 
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/error%20function.jpg" width="900">
 
-Where,
-
-_i_ represents number of days in the past on which the data point was captured; _e_<sub>_(deaths,   i)_</sub> is squared error in number of deaths for i<sup>th</sup> day in the past; _e_<sub>_(cases,   i)_</sub> is squared error in number of cases for i<sup>th</sup> day in the past; _W_<sub>_deaths_</sub> is the weight assigned to the number of deaths data feed; and _W_<sub>_cases_</sub> is the weight assigned to the number of cases data feed
+Where, _i_ represents number of days in the past on which the data point was captured; _e_<sub>_(deaths,   i)_</sub> is squared error in number of deaths for i<sup>th</sup> day in the past; _e_<sub>_(cases,   i)_</sub> is squared error in number of cases for i<sup>th</sup> day in the past; _W_<sub>_deaths_</sub> is the weight assigned to the number of deaths data feed; and _W_<sub>_cases_</sub> is the weight assigned to the number of cases data feed
 
 **Building a recency bias:** Additionally, Given that the situation is rapidly evolving, including awareness amongst people toward social distancing and personal hygiene, and governments&#39; efforts, we also wanted to ensure that the ML model gives more weightage to recent data points compared to older data points. For this we have implemented a slow exponential reduction, where each previous day has 90% weightage than the subsequent day. Using this factor, the weight reduces to 60% for 5th previous day, 37% for 10th previous day, and 5% for 30th previous day compared to today.
 
