@@ -55,7 +55,7 @@ And the parameters (described in terms of disease or demographic features) are,
 
 Based on above description, the model requires 9 disease features as inputs. These features can be classified into two categories: six **static features** and three **dynamic features**.
 
-- ****** Static features** are features of the disease that are mainly inherent to the disease itself and can remain largely unchanged across communities. Static nature of these features allows us to pick their values from global studies. However, it should be noted that these features may mutate in the future with the virus itself:
+- **Static features** are features of the disease that are mainly inherent to the disease itself and can remain largely unchanged across communities. Static nature of these features allows us to pick their values from global studies. However, it should be noted that these features may mutate in the future with the virus itself:
 
 | **Static disease features** | **Value** |
 | --- | --- |
@@ -66,15 +66,12 @@ Based on above description, the model requires 9 disease features as inputs. The
 | **Days for which a person with severe symptoms remains infectious before recovery or death** | 20 |
 | **Days before a recovered person re-contracts the virus** | 30 (unused) |
 
-- ****** Dynamic features** are those disease features that also depend on community circumstances and can be heavily influenced by the way in which communities and governments respond to CoVID-19. We identify 3 such features:
+- **Dynamic features** are those disease features that also depend on community circumstances and can be heavily influenced by the way in which communities and governments respond to CoVID-19. We identify 3 such features:
 
--
   - **Number of exposures caused by infectious people with mild or no symptoms:** This is disease&#39;s basic reproduction rate for people showing mild symptoms, and can be influenced by community customs, population density, lockdowns, social-distancing, personal hygiene and usage of masks
 
--
   - **Number of exposures caused by infectious people with severe symptoms:** People showing severe symptoms may naturally have a higher disease reproduction rate, however they may also be easily identifiable. With a good quarantine mechanism in place, such people can be easily separated from the population, lowering their disease reproduction rate
 
--
   - **Percentage of infectious people with severe symptoms who recover:** This will depend on a community&#39;s comorbidity factors (e.g. high diabetes prevalence) and access to healthcare
 
 Dynamic nature of these features along with model&#39;s high sensitivity towards them2 implies that values estimated in one location may not be used in another, and only measurements made in local and current context can provide reliable forecasts.
