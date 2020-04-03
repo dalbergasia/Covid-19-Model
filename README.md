@@ -111,14 +111,14 @@ Where, _i_ represents number of days in the past on which the data point was cap
 
 **Building a recency bias:** Additionally, Given that the situation is rapidly evolving, including awareness amongst people toward social distancing and personal hygiene, and governments&#39; efforts, we also wanted to ensure that the ML model gives more weightage to recent data points compared to older data points. For this we have implemented a slow exponential reduction, where each previous day has 90% weightage than the subsequent day. Using this factor, the weight reduces to 60% for 5th previous day, 37% for 10th previous day, and 5% for 30th previous day compared to today.
 
-**Results (so far):**
-
+### **Results (so far):**
+---
 **For Singapore: TBU**
 
 **For India: TBU**
 
-**Next steps:**
-
+### **Next steps:**
+---
 - Finetuning the values of static features using global data
 - Extensive testing and feedback
 - Develop deployable versions that can be picked by local and state governments to test interventions
