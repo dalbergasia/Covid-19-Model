@@ -86,6 +86,11 @@ Dynamic nature of these features along with model&#39;s high sensitivity towards
 Using the model equations from Step II and values of _static features_ from step III, we built a deterministic model in Python (WIP) and excel (Completed).  Figure 2 shows time variance of susceptible (S), Exposed (E), Infectious with mild symptoms (I), Infectious with severe symptoms (C), Recovered (R), and Dead (D) over the next 2-years for India, using three set of values for dynamic features. As indicated earlier, the projections of peak hospital requirement and total number of fatalities vary significantly across the three sets.
 
 _Figure 2: Simulation model to be updated_
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/2-2-0.75.png" width="700">
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/3-3-0.75.png" width="700">
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/3-3-0.60.png" width="700">
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/4-4-0.75.png" width="700">
+
 
 ### **Step V: Building the Machine Learning layer for real time prediction**
 ---
