@@ -69,7 +69,8 @@ Based on above description, the model requires 9 disease features as inputs. The
      | *Days for which a person with mild or no symptoms remains infectious before recovery* | 20 |
      | *Days for which a person with severe symptoms remains infectious before recovery or death* | 20 |
      | *Days before a recovered person re-contracts the virus* | 30 (unused) |
-
+     Sources TBU
+     
 - **Dynamic features** are those disease features that also depend on community circumstances and can be heavily influenced by the way in which communities and governments respond to CoVID-19. We identify 3 such features:
 
   - **_Number of exposures caused by infectious people with mild or no symptoms:_** This is disease&#39;s basic reproduction rate for people showing mild symptoms, and can be influenced by community customs, population density, lockdowns, social-distancing, personal hygiene and usage of masks
