@@ -34,9 +34,7 @@ Please note that for any short-term projection, the vital dynamics components (i
 
 Aligned with the above schematic, we have following differential equations
 
-<p><a target="_blank" rel="noopener noreferrer" href="Differential Equations"><img src="https://github.com/dalbergasia/Covid-19-Model/raw/master/images/differential%20equations.jpg" height="400" style="max-width:100%;"></a></p>
-
-<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/differential%20equations.jpg" height="100">
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/differential%20equations.jpg" height="300">
 
 Where, at any given time,
 
