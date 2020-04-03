@@ -24,7 +24,7 @@ There are four steps involved in developing this model:
 
 We picked a generalised SEIRS epidemiological model with vital dynamics, and made two specific modifications to it (Figure 1).
 
-- We consider two categories of people who can be infectious – those who do not display any symptoms or display only minor symptoms, and those who display severe symptoms1. The lack of obvious symptoms in infectious individuals is an important characteristic of the CoVID-19, also making it a very insidious disease and hence important to model
+- We consider two categories of people who can be infectious – those who do not display any symptoms or display only minor symptoms, and those who display severe symptoms<sup id="a1">[1](#f1)</sup>. The lack of obvious symptoms in infectious individuals is an important characteristic of the CoVID-19, also making it a very insidious disease and hence important to model
 - We have split &#39;Removed&#39; into &#39;Recovered&#39; and &#39;Dead&#39; as these statistics are important for understanding the extent of casualty and for reliably using the ML algorithm, as we will explore.
 
 ###### *Figure 1: Schematic representing shift of population through SEIRS model of disease cycle, and subsequent CoVID-19 modifications*
@@ -96,8 +96,8 @@ Recognising lack of any standard R or Python library to run regression on custom
 
 For this curve-fitting exercise, we select two most commonly available daily data feeds for most countries (note that other real-world data feeds, such as number of hospitalised CoVID-19 cases, if it reliably reflects all severe cases, can also be used for this exercise):
 
-1. Daily number of CoVID-19 deaths
-2. Daily identified cases of CoVID-19
+1. Daily number of CoVID-19 deaths data feed
+2. Daily identified cases of CoVID-19 data feed
 
 ### _A note on the overall Error term_
 
@@ -126,7 +126,7 @@ _i_ represents number of days in the past on which the data point was captured; 
 
 ---
 <a name="1">1</a>: Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
-
+<b id="f1">1</b> Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support [↩](#a1)
 <a name="2">2</a>: Note on sensitivity of disease prediction against reproduction rates
 
 <a name="3">3</a>: As on 2nd April 2020
