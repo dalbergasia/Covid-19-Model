@@ -94,10 +94,12 @@ Once we have the underlying simulation engine, in the next step we built a machi
 
 Recognising lack of any standard R or Python library to run regression on custom models, such as those built using a modified SIERS, we have achieved the curve-fitting using first principle approach: We compare modelled values against the real-world data, estimate the overall error term, and allow disease features to vary within certain constraints with an objective to minimise this error term. This approach allows us to convert an ML problem into an Optimisation problem, where we try to find the minima of the error term in the _dynamic features_ plane. In excel, we implement this optimisation using the _solver add-on_ with GHG-Non-Liner algorithm. In Python (WIP), we take a brute-force approach. With just 3 dynamic features that can vary in small ranges, efficiency of calculation with brute-force was not found to be an issue. However, there remains a scope to make optimisation algorithm in python significantly more efficient.
 
-For this curve-fitting exercise, we select two most commonly available daily data feeds for most countries (note that other real-world data feeds, such as number of hospitalised CoVID-19 cases, if it reliably reflects all severe cases, can also be used for this exercise):
+For this curve-fitting exercise, we select two most commonly available daily data feeds for most countries:
 
 1. Daily number of CoVID-19 deaths data feed
 2. Daily identified cases of CoVID-19 data feed
+
+Note that other real-world data feeds, such as number of hospitalised CoVID-19 cases, if it reliably reflects all severe cases, can also be used for this exercise
 
 ### _A note on the overall Error term_
 
