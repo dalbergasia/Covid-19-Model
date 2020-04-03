@@ -52,7 +52,7 @@ And the parameters (described in terms of disease or demographic features) are,
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_1.jpg" width="700">
 <img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/parameters_2.jpg" width="700">
 
-**Step III: Understanding the nature of disease features:**
+### **Step III: Understanding the nature of disease features:**
 
 Based on above description, the model requires 9 disease features as inputs. These features can be classified into two categories: six **static features** and three **dynamic features**.
 
@@ -77,13 +77,13 @@ Based on above description, the model requires 9 disease features as inputs. The
 
 Dynamic nature of these features along with model&#39;s high sensitivity towards them2 implies that values estimated in one location may not be used in another, and only measurements made in local and current context can provide reliable forecasts.
 
-**Step IV: Building the simulation engine**
+### **Step IV: Building the simulation engine**
 
 Using the model equations from Step II and values of _static features_ from step III, we built a deterministic model in Python (WIP) and excel (Completed).  Figure 2 shows time variance of susceptible (S), Exposed (E), Infectious with mild symptoms (I), Infectious with severe symptoms (C), Recovered (R), and Dead (D) over the next 2-years for India, using three set of values for dynamic features. As indicated earlier, the projections of peak hospital requirement and total number of fatalities vary significantly across the three set
 
 _Figure 2: Simulation model to be updated_
 
-**Step V: Building the Machine Learning layer for real time prediction**
+### **Step V: Building the Machine Learning layer for real time prediction**
 
 Once we have the underlying simulation engine, in the next step we built a machine learning layer to figure out what set of values for the dynamic parameters best explains the real-world data. In other words, we try to find values of the dynamic features which best fits the projection curve on the real-world data.
 
@@ -112,23 +112,14 @@ represents number of days before today for the data point;  is square error for 
 
 **Next steps:**
 
-- **** Finetuning the values of static features using global data
-- **** Extensive testing and feedback
-- **** Develop deployable versions that can be picked by local and state governments to test interventions
+- Finetuning the values of static features using global data
+- Extensive testing and feedback
+- Develop deployable versions that can be picked by local and state governments to test interventions
 
-1
 
-#
- Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
+---
+<a name="1">1. </a>: Severe symptoms: We define this group as those who require hospital care for oxygen or ICU support
 
-2
+Note on sensitivity of disease prediction against reproduction rates
 
-#
- Note on sensitivity of disease prediction against reproduction rates
-
-3
-
-#
- As on 2
-# nd
- April 2020
+As on 2nd April 2020
