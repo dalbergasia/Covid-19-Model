@@ -109,7 +109,7 @@ Where,
 
 _i_ represents number of days before today for the data point
 
-e_(deaths,   i) is square error for the ith previousday from today in number of deaths  
+_e_<sub>_(deaths,   i)_</sub> is square error for the ith previousday from today in number of deaths  
 
 e_(cases,   i) is square error for the ith previousday from today in number of cases 
 
