@@ -99,7 +99,7 @@ For this curve-fitting exercise, we select two most commonly available daily dat
 1. Daily number of CoVID-19 deaths
 2. Daily identified cases of CoVID-19
 
-<u>_A note on the overall Error term_</u>
+### _A note on the overall Error term_
 
 **Including multiple data feeds:** While, reported number of CoVID-19 deaths can be one of the most reliable data feeds, in a country such as Singapore with only 4 deaths3, it may also lack any statistical power. On the other hand, large number of daily identified cases can provide the required statistical power but may also be under-reported. To solve for this, we estimate overall error terms by assigning pre-specified weights to the normalised version of respective errors in the two data feeds. These weights reflect our preference (and trust) for the data feed to be used in fitting the curve. Overall Error term is given by:
 
@@ -107,15 +107,7 @@ For this curve-fitting exercise, we select two most commonly available daily dat
 
 Where,
 
-_i_ represents number of days before today for the data point
-
-_e_<sub>_(deaths,   i)_</sub> is square error for the ith previousday from today in number of deaths  
-
-e_(cases,   i) is square error for the ith previousday from today in number of cases 
-
-W_deaths is weight assigned to the number of deaths data feed 
-
-W_cases is weight assigned to the number of cases data feed
+_i_ represents number of days before today for the data point; _e_<sub>_(deaths,   i)_</sub> is square error for the ith previousday from today in number of deaths; _e_<sub>_(cases,   i)_</sub> is square error for the ith previousday from today in number of cases; _W_<sub>_deaths_</sub> is weight assigned to the number of deaths data feed; and _W_<sub>_cases_</sub> is weight assigned to the number of cases data feed
 
 **Building a recency bias:** Additionally, Given that the situation is rapidly evolving, including awareness amongst people toward social distancing and personal hygiene, and governments&#39; efforts, we also wanted to ensure that the ML model gives more weightage to recent data points compared to older data points. For this we have implemented a slow exponential reduction, where each previous day has 90% weightage than the subsequent day. Using this factor, the weight reduces to 60% for 5th previous day, 37% for 10th previous day, and 5% for 30th previous day compared to today.
 
