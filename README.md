@@ -58,7 +58,7 @@ Based on above description, the model requires 9 disease features as inputs. The
 - **Static features** are features of the disease that are mainly inherent to the disease itself and can remain largely unchanged across communities. Static nature of these features allows us to pick their values from global studies. However, it should be noted that these features may mutate in the future with the virus itself:
 
 | **Static disease features** | **Value** |
-| --- | --- |
+| --- | :-: |
 | **Percentage of exposed who become infectious with severe symptoms** | 19% |
 | **Percentage of recovered population who may re-contract the virus** | 0% (unused) |
 | **Days an exposed person takes to become infectious** | 5 |
