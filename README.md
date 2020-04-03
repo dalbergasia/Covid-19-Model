@@ -34,7 +34,7 @@ Please note that for any short-term projection, the vital dynamics components (i
 
 Aligned with the above schematic, we have following differential equations
 
-<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/differential%20equations.jpg" height="300">
+<img src="https://github.com/dalbergasia/Covid-19-Model/blob/master/images/differential%20equations.jpg" height="250">
 
 Where, at any given time,
 
@@ -68,11 +68,11 @@ Based on above description, the model requires 9 disease features as inputs. The
 
 - **Dynamic features** are those disease features that also depend on community circumstances and can be heavily influenced by the way in which communities and governments respond to CoVID-19. We identify 3 such features:
 
-  - **Number of exposures caused by infectious people with mild or no symptoms:** This is disease&#39;s basic reproduction rate for people showing mild symptoms, and can be influenced by community customs, population density, lockdowns, social-distancing, personal hygiene and usage of masks
+  - **_Number of exposures caused by infectious people with mild or no symptoms:_** This is disease&#39;s basic reproduction rate for people showing mild symptoms, and can be influenced by community customs, population density, lockdowns, social-distancing, personal hygiene and usage of masks
 
-  - **Number of exposures caused by infectious people with severe symptoms:** People showing severe symptoms may naturally have a higher disease reproduction rate, however they may also be easily identifiable. With a good quarantine mechanism in place, such people can be easily separated from the population, lowering their disease reproduction rate
+  - **_Number of exposures caused by infectious people with severe symptoms:_** People showing severe symptoms may naturally have a higher disease reproduction rate, however they may also be easily identifiable. With a good quarantine mechanism in place, such people can be easily separated from the population, lowering their disease reproduction rate
 
-  - **Percentage of infectious people with severe symptoms who recover:** This will depend on a community&#39;s comorbidity factors (e.g. high diabetes prevalence) and access to healthcare
+  - **_Percentage of infectious people with severe symptoms who recover:_** This will depend on a community&#39;s comorbidity factors (e.g. high diabetes prevalence) and access to healthcare
 
 Dynamic nature of these features along with model&#39;s high sensitivity towards them2 implies that values estimated in one location may not be used in another, and only measurements made in local and current context can provide reliable forecasts.
 
